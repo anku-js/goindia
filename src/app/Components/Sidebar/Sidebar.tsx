@@ -4,6 +4,7 @@ import {
   BiSolidBell,
   BiSolidMessageAltDetail,
   BiSolidDollarCircle,
+  BiCaretDown,
 } from "react-icons/bi";
 
 export default function Sidebar() {
@@ -18,9 +19,12 @@ export default function Sidebar() {
       </div>
       <div className="py-4 border-t-2 border-slate-500 ">
         <ul>
-          <li className="flex gap-3 px-6 py-2.5 hover:bg-[#142742]">
-            <BiSolidMessageAltDetail className="w-[30px] h-[30px]" />
-            <p>Discussion Forum</p>
+          <li className="flex items-center justify-between px-6 py-2.5 hover:bg-[#142742]">
+            <div className="flex gap-3">
+              <BiSolidMessageAltDetail className="w-[30px] h-[30px]" />
+              <p>Discussion Forum</p>
+            </div>
+            <BiCaretDown />
           </li>
           <li className="flex gap-3 px-6 py-2.5 hover:bg-[#142742]">
             <BiSolidDollarCircle className="w-[30px] h-[30px]" />
