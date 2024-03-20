@@ -1,4 +1,3 @@
-import "./Sidebar.scss";
 import { FaUser } from "react-icons/fa";
 import {
   BiSolidBell,
@@ -9,7 +8,7 @@ import {
 
 export default function Sidebar() {
   return (
-    <section className="bg-[#1f3a61] w-[30%] text-white text-xl h-screen">
+    <section className="bg-[#1f3a61] w-[50%] text-white text-xl h-screen">
       <div className="px-7 py-6 flex justify-between items-center">
         <div className="flex items-center gap-4">
           <FaUser className="flex w-[30px] h-[30px] rounded-full" />

@@ -1,10 +1,15 @@
 import Sidebar from "./Components/Sidebar/Sidebar";
-import Blogs from "./Components/Blogs/Blogs";
+import Posts from "./Components/Posts/Posts";
+import BlogPosts from "./Components/BlogPosts/BlogPosts";
+
 export default function Home() {
   return (
-    <div className="flex">
+    <div className="flex gap-5 bg-slate-100">
       <Sidebar />
-      <Blogs />
+      <section className="flex">
+        <Posts />
+        <BlogPosts />
+      </section>
     </div>
   );
 }
