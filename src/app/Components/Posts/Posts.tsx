@@ -4,8 +4,8 @@ import { FiMessageSquare } from "react-icons/fi";
 
 export default function Posts() {
   return (
-    <section className="bg-white w-full">
-      <div className="pt-[2px] pr-[6px] pb-[5px] mx-4 my-7 bg-slate-200">
+    <div className="bg-white w-full">
+      <div className="pt-[2px] pr-[6px] pb-[5px] bg-slate-200">
         <div className="flex rounded bg-white shadow-md">
           <div className="rounded-full w-[60px]  ml-6">
             <img src="/favicon.png" className="rounded-full w-full" />
@@ -45,6 +45,6 @@ export default function Posts() {
           </p>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

@@ -5,10 +5,16 @@ import {
   BiSolidDollarCircle,
   BiCaretDown,
 } from "react-icons/bi";
+import { AiOutlineCaretRight, AiOutlineCaretLeft } from "react-icons/ai";
 
-export default function Sidebar() {
+export default function Sidebar({
+  isSidebarOpened,
+  handleClick,
+  setSelectedTab,
+  selectedTab,
+}) {
   return (
-    <section className="bg-[#1f3a61] w-[50%] text-white text-xl h-screen">
+    <section className="fixed bg-[#1f3a61] text-white text-xl min-h-screen w-1/2 z-10 lg:relative lg:w-[30%]">
       <div className="px-7 py-6 flex justify-between items-center">
         <div className="flex items-center gap-4">
           <FaUser className="flex w-[30px] h-[30px] rounded-full" />
@@ -18,14 +24,24 @@ export default function Sidebar() {
       </div>
       <div className="py-4 border-t-2 border-slate-500 ">
         <ul>
-          <li className="flex items-center justify-between px-6 py-2.5 hover:bg-[#142742]">
+          <li
+            className={`flex items-center justify-between px-6 py-2.5 hover:bg-[#142742] ${
+              selectedTab === "Discussion" && "bg-[#142742]"
+            }`}
+            onClick={() => setSelectedTab("Discussion")}
+          >
             <div className="flex gap-3">
               <BiSolidMessageAltDetail className="w-[30px] h-[30px]" />
               <p>Discussion Forum</p>
             </div>
             <BiCaretDown />
           </li>
-          <li className="flex gap-3 px-6 py-2.5 hover:bg-[#142742]">
+          <li
+            className={`flex gap-3 px-6 py-2.5 hover:bg-[#142742] ${
+              selectedTab === "Market" && "bg-[#142742]"
+            }`}
+            onClick={() => setSelectedTab("Market")}
+          >
             <BiSolidDollarCircle className="w-[30px] h-[30px]" />
             <p>Market Stories</p>
           </li>
