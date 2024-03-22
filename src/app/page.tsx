@@ -9,7 +9,7 @@ import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import "./globals.css";
 
 export default function Home() {
-  const [isSidebarOpened, setIsSidebarOpened] = useState(true);
+  const [isSidebarOpened, setIsSidebarOpened] = useState(false);
   const [selectedTab, setSelectedTab] = useState("Discussion");
   const [dataFromApi, setDataFromApi] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
