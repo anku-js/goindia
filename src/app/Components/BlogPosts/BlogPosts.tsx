@@ -9,6 +9,7 @@ interface Props {
 export default function BlogPosts({ blogPosts }: Props) {
   return (
     <div className="bg-white">
+      <h2 className="hidden lg:block bg-slate-200 w-fit text-red-600 text-4xl ml-5 mt-2 px-4 py-2">Market Stories</h2>
       {blogPosts?.map(({ id, title, blog, blogImage }) => {
         return (
           <div className="px-10 py-6 lg:px-5 lg:py-6 max-w-96" key={id}>

@@ -4,20 +4,23 @@ import { FiMessageSquare } from "react-icons/fi";
 
 interface Props {
   posts: {
-    id: number,
-    comments: string,
-    label: string,
-    likes: string,
-    post: string
-    timeElapsed: string,
-    userAvatar: string
-    userName: string
-    views: string
-  }[]
+    id: number;
+    comments: string;
+    label: string;
+    likes: string;
+    post: string;
+    timeElapsed: string;
+    userAvatar: string;
+    userName: string;
+    views: string;
+  }[];
 }
 export default function Posts({ posts }: Props) {
   return (
     <div className="bg-white w-full">
+      <h2 className="hidden lg:block bg-slate-200 w-fit text-red-600 text-4xl ml-5 px-4 py-2">
+        Discussion Forum
+      </h2>
       {posts?.map(
         ({
           id,
@@ -31,11 +34,11 @@ export default function Posts({ posts }: Props) {
           views,
         }) => {
           return (
-            <div className="pl-6 py-6 lg:px-5 lg:py-6" key={id}>
+            <div className="pl-6 py-6 lg:px-5 lg:py-7" key={id}>
               <div className="pt-[2px] pr-[6px] pb-[5px] bg-slate-200">
                 <div className="flex rounded bg-white shadow-md">
-                  <div className="rounded-full w-[60px] mt-2.5 ml-2 lg:ml-6">
-                    <img src={userAvatar} className="rounded-full w-full" />
+                  <div className="rounded-full w-[30px] h-[30px] lg:w-[60px] lg:h-[60px] mt-2.5 ml-2 lg:ml-6">
+                    <img src={userAvatar} className="rounded-full w-full object-cover h-full" />
                   </div>
                   <div className="w-full px-2 py-2 lg:px-4 lg:py-3">
                     <div className="flex gap-[10px] lg:gap-[20px]">
@@ -49,19 +52,19 @@ export default function Posts({ posts }: Props) {
                     </p>
                     <div className="flex justify-between mt-4">
                       <p className="flex gap-1 lg:gap-2 items-center text-[10px] lg:text-sm font-medium">
-                        <BiHeart className="w-[20px] h-[20px] lg:w-[26px] lg:h-[26px]" />
+                        <BiHeart className="w-[18px] h-[20px] lg:w-[26px] lg:h-[26px]" />
                         {likes}
                       </p>
                       <p className="flex gap-1 lg:gap-2 items-center text-[10px] lg:text-sm font-medium">
-                        <CgEye className="w-[20px] h-[20px] lg:w-[26px] lg:h-[26px]" />
+                        <CgEye className="w-[18px] h-[20px] lg:w-[26px] lg:h-[26px]" />
                         {views}
                       </p>
                       <p className="flex gap-1 lg:gap-2 items-center text-[10px] lg:text-sm font-medium">
-                        <FiMessageSquare className="w-[20px] h-[20px] lg:w-[26px] lg:h-[26px]" />
+                        <FiMessageSquare className="w-[18px] h-[20px] lg:w-[26px] lg:h-[26px]" />
                         {comments} Comments
                       </p>
                       <p className="flex gap-1 lg:gap-2 items-center text-[10px] lg:text-sm font-medium">
-                        <BiShareAlt className="w-[20px] h-[20px] lg:w-[26px] lg:h-[26px]" />
+                        <BiShareAlt className="w-[18px] h-[20px] lg:w-[26px] lg:h-[26px]" />
                         Share
                       </p>
                     </div>
