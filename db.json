@@ -77,5 +77,49 @@
       "views": "4k",
       "comments": "2k"
     }
+  ],
+  "blogPosts": [
+    {
+      "id": "1",
+      "title": "Coffee Yes, You Maybe.",
+      "blog": "Vedanta Ltd has announced a restructuring plan to demerge all it’s business verticals into separate listed entities. It is a clean split with existing shareholders of Vedanta Ltd getting one share each of 5 demerged entities. ",
+      "blogImage": "/blog1.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Sunrise at horizon",
+      "blog": "Good Assets + Strong Management = Winning Business Ambuja Cement’s recent announcement to acquire the debt laden Sanghi Industries feels like the same above formula.",
+      "blogImage": "/blog2.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Earth on Fire",
+      "blog": "Last week, the average global daily temperature made a hat trick of record highs. Global warming is upon us and it is reflected in erratic climate changes. Summers are becoming more intense and so are winters.",
+      "blogImage": "/blog3.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Hope is back",
+      "blog": "China’s upcoming stimulus is talk of the town and this has pulled metal stocks out of the slumber. Metal Index has gone no where in last 6 months but has climbed 5% in last 4 weeks raising hopes of a bigger rally.",
+      "blogImage": "/blog4.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Data is telling a story",
+      "blog": "India Data Centre capacity to double in next 2years India currently has around 800MW of data centre capacity and is growing at 40% cagr and will be touching 1700MW by FY25E.",
+      "blogImage": "/blog5.jpg"
+    },
+    {
+      "id": "6",
+      "title": "DNA doesn't die",
+      "blog": "Well it actually does but a scientific study puts the half life of DNA at 521years, so in ideal conditions, DNA would take 6.8mn years to fully disintegrate. Hi, As an avid reader of our notes, you are aware that we were very bullish on prospects of Ambuja Cement.",
+      "blogImage": "/blog6.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Ticking all the boxes",
+      "blog": "Warren Buffett famously said, “Only when the tide goes out do you discover who’s been swimming.” The recent run on regional US banks post stress due to sharp increase in interest rates tells you the importance of regulation.",
+      "blogImage": "/blog7.jpg"
+    }
   ]
 }

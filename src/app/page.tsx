@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import Posts from "./Components/Posts/Posts";
 import BlogPosts from "./Components/BlogPosts/BlogPosts";
@@ -10,9 +10,26 @@ import "./globals.css";
 export default function Home() {
   const [isSidebarOpened, setIsSidebarOpened] = useState(false);
   const [selectedTab, setSelectedTab] = useState("Discussion");
+  const [dataFromApi, setDataFromApi] = useState({});
   function handleClick() {
     setIsSidebarOpened(!isSidebarOpened);
   }
+  const tabs = {
+    Discussion: "posts",
+    Market: "blogPosts",
+  };
+
+  useEffect(() => {
+    async function geData() {
+      const response = await fetch(
+        `https://my-json-server.typicode.com/anku-js/goindia/${tabs[selectedTab]}`
+      );
+      const responsJson = await response.json();
+      setDataFromApi(responsJson);
+    }
+    geData();
+  }, []);
+  console.log(dataFromApi);
   return (
     <div className="flex">
       {isSidebarOpened && (
