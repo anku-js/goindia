@@ -3,12 +3,12 @@ export default function BlogPosts({ dataFromApi }) {
     <div className="bg-white">
       {dataFromApi?.map(({ id, title, blog, blogImage }) => {
         return (
-          <div className="py-6 flex flex-row-reverse" key={id}>
-            <div className="w-full lg:w-[500px] lg:h-auto">
+          <div className="px-10 py-6 lg:px-5 lg:py-6 w-80" key={id}>
+            <div className="">
               <img
                 src={blogImage}
                 alt="blogPost image"
-                className="rounded-tl-[3px] rounded-tr-[3px] w-full"
+                className="rounded-tl-[3px] rounded-tr-[3px] block max-w-full"
               />
             </div>
             <div className="px-3 py-3 border-x-2 border-slate-100">

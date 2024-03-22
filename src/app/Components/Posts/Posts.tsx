@@ -19,7 +19,7 @@ export default function Posts({ dataFromApi }) {
           views,
         }) => {
           return (
-            <div className="py-6" key={id}>
+            <div className="pl-6 py-6 lg:px-5 lg:py-6" key={id}>
               <div className="pt-[2px] pr-[6px] pb-[5px] bg-slate-200">
                 <div className="flex rounded bg-white shadow-md">
                   <div className="rounded-full w-[60px] ml-2 lg:ml-6">

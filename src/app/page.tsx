@@ -8,7 +8,7 @@ import Tabs from "./Components/Tabs/Tabs";
 import "./globals.css";
 
 export default function Home() {
-  const [isSidebarOpened, setIsSidebarOpened] = useState(false);
+  const [isSidebarOpened, setIsSidebarOpened] = useState(true);
   const [selectedTab, setSelectedTab] = useState("Discussion");
   const [dataFromApi, setDataFromApi] = useState([]);
   function handleClick() {
@@ -45,7 +45,7 @@ export default function Home() {
         }`}
       >
         <Tabs selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
-        <div className="flex h-screen mx-4 my-4">
+        <div className="flex h-screen mx-4 my-4 mx-auto">
           {selectedTab === "Discussion" && <Posts dataFromApi={dataFromApi}/>}
           {selectedTab === "Market" && <BlogPosts dataFromApi={dataFromApi}/>}
         </div>

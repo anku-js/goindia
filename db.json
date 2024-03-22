@@ -1,4 +1,6 @@
 {
+  "userInfo": { "name": "Anku", "userImg": "/userImg.jpg" },
+
   "posts": [
     {
       "id": "1",

@@ -15,7 +15,7 @@ export default function Sidebar({
   selectedTab,
 }: Props) {
   return (
-    <section className="fixed bg-[#1f3a61] text-white text-xl min-h-screen w-1/2 z-10 lg:relative lg:w-[30%] text-[14px] lg:text-[20px]">
+    <section className="fixed bg-[#1f3a61] text-white min-h-screen w-1/2 z-10 lg:relative lg:w-[40%] text-[14px] lg:text-[20px]">
       <div className="px-5 py-4 lg:px-7 lg:py-6 flex justify-between items-center">
         <div className="flex items-center gap-3 lg:gap-4">
           <FaUser className="flex w-[20px] h-[20px] lg:w-[30px] lg:h-[30px] rounded-full" />
