@@ -1,9 +1,17 @@
-export default function BlogPosts({ dataFromApi }) {
+interface Props {
+  blogPosts: {
+    id: number,
+    title: string,
+    blog: string,
+    blogImage: string
+  }[]
+}
+export default function BlogPosts({ blogPosts }: Props) {
   return (
     <div className="bg-white">
-      {dataFromApi?.map(({ id, title, blog, blogImage }) => {
+      {blogPosts?.map(({ id, title, blog, blogImage }) => {
         return (
-          <div className="px-10 py-6 lg:px-5 lg:py-6 w-80" key={id}>
+          <div className="px-10 py-6 lg:px-5 lg:py-6 max-w-96" key={id}>
             <div className="">
               <img
                 src={blogImage}

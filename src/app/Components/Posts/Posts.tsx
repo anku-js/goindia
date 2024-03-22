@@ -2,11 +2,23 @@ import { BiHeart, BiShareAlt } from "react-icons/bi";
 import { CgEye } from "react-icons/cg";
 import { FiMessageSquare } from "react-icons/fi";
 
-export default function Posts({ dataFromApi }) {
-  // const {id, comments, label, likes, post, timeElapsed, userAvatar, userName, views} = dataFromApi
+interface Props {
+  posts: {
+    id: number,
+    comments: string,
+    label: string,
+    likes: string,
+    post: string
+    timeElapsed: string,
+    userAvatar: string
+    userName: string
+    views: string
+  }[]
+}
+export default function Posts({ posts }: Props) {
   return (
     <div className="bg-white w-full">
-      {dataFromApi?.map(
+      {posts?.map(
         ({
           id,
           comments,
@@ -22,7 +34,7 @@ export default function Posts({ dataFromApi }) {
             <div className="pl-6 py-6 lg:px-5 lg:py-6" key={id}>
               <div className="pt-[2px] pr-[6px] pb-[5px] bg-slate-200">
                 <div className="flex rounded bg-white shadow-md">
-                  <div className="rounded-full w-[60px] ml-2 lg:ml-6">
+                  <div className="rounded-full w-[60px] mt-2.5 ml-2 lg:ml-6">
                     <img src={userAvatar} className="rounded-full w-full" />
                   </div>
                   <div className="w-full px-2 py-2 lg:px-4 lg:py-3">
