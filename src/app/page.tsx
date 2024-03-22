@@ -10,7 +10,7 @@ import "./globals.css";
 export default function Home() {
   const [isSidebarOpened, setIsSidebarOpened] = useState(false);
   const [selectedTab, setSelectedTab] = useState("Discussion");
-  const [dataFromApi, setDataFromApi] = useState({});
+  const [dataFromApi, setDataFromApi] = useState([]);
   function handleClick() {
     setIsSidebarOpened(!isSidebarOpened);
   }
@@ -28,8 +28,8 @@ export default function Home() {
       setDataFromApi(responsJson);
     }
     geData();
-  }, []);
-  console.log(dataFromApi);
+  }, [selectedTab]);
+  console.log(tabs[selectedTab]);
   return (
     <div className="flex">
       {isSidebarOpened && (
@@ -46,8 +46,8 @@ export default function Home() {
       >
         <Tabs selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
         <div className="flex h-screen mx-4 my-4">
-          {selectedTab === "Discussion" && <Posts />}
-          {selectedTab === "Market" && <BlogPosts />}
+          {selectedTab === "Discussion" && <Posts dataFromApi={dataFromApi}/>}
+          {selectedTab === "Market" && <BlogPosts dataFromApi={dataFromApi}/>}
         </div>
       </section>
     </div>
