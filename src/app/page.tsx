@@ -16,12 +16,7 @@ export default function Home() {
   return (
     <div className="flex">
       {isSidebarOpened && (
-        <Sidebar
-          isSidebarOpened={isSidebarOpened}
-          handleClick={handleClick}
-          selectedTab={selectedTab}
-          setSelectedTab={setSelectedTab}
-        />
+        <Sidebar selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
       )}
       <SidebarToggle
         isSidebarOpened={isSidebarOpened}

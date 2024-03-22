@@ -8,8 +8,8 @@ interface Props {
 export default function SidebarToggle({ handleClick, isSidebarOpened }: Props) {
   return (
     <button
-      className={`fixed z-10 flex items-center h-screen bg-slate-100 button open lg:relative lg:left-[0] ${
-        isSidebarOpened ? "left-[50%] " : "left-[0]"
+      className={`fixed h-screen flex items-center bg-slate-100 button open lg:relative lg:left-[0] ${
+        isSidebarOpened ? "left-[50%] z-10" : "left-[0] h-[100px] z-0"
       }`}
     >
       <div

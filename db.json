@@ -1,0 +1,81 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "userName": "Roshan Singh",
+      "post": "Today's breakthrough: mastered React hooks like useState, useEffect, useCallback, useReducer, and Context API with TypeScript, crafting a sleek doc-mini-app. Thanks to Framer Motion, card dragging is now effortlessly elegant.",
+      "userAvatar": "/avatar1.jpg",
+      "label": "",
+      "timeElapsed": "1 min ago",
+      "likes": "1k",
+      "views": "4k",
+      "comments": "2k"
+    },
+    {
+      "id": "2",
+      "userName": "Rakesh Kumar",
+      "post": "Our new client, Remsons Industries Ltd (NSE Code: REMSONSIND; Mkt Cap – Rs695cr) is a pioneer and leading manufacturer of automotive control cables in India. It has a rich legacy of over 5 decades building strong relationship with OEMs across India and globally.",
+      "userAvatar": "/avatar2.jpg",
+      "label": "",
+      "timeElapsed": "2 min ago",
+      "likes": "2k",
+      "views": "5k",
+      "comments": "3k"
+    },
+    {
+      "id": "3",
+      "userName": "Sweta Rathore",
+      "post": "Container Freight Triples on Red Sea Conflict The ongoing Red Sea threat from Yemeni rebel group Houthis is having an impact on the supply chain pushing up the charter rates for containers tripling on the Asia to Europe route.",
+      "userAvatar": "/avatar3.jpg",
+      "label": "",
+      "timeElapsed": "3 min ago",
+      "likes": "4k",
+      "views": "k",
+      "comments": "2k"
+    },
+    {
+      "id": "4",
+      "userName": "Hinduja P",
+      "post": "Vedanta Ltd has announced a restructuring plan to demerge all it’s business verticals into separate listed entities. It’s a clean split with existing shareholders of Vedanta Ltd getting one share each of 5 demerged entities.",
+      "userAvatar": "/avatar4.jpg",
+      "label": "",
+      "timeElapsed": "4 min ago",
+      "likes": "2k",
+      "views": "4k",
+      "comments": "3k"
+    },
+    {
+      "id": "5",
+      "userName": "Harshita MV",
+      "post": "Today's breakthrough: mastered React hooks like useState, useEffect, useCallback, useReducer, and Context API with TypeScript, crafting a sleek doc-mini-app. Thanks to Framer Motion, card dragging is now effortlessly elegant.",
+      "userAvatar": "/avatar5.jpg",
+      "label": "",
+      "timeElapsed": "5 min ago",
+      "likes": "1k",
+      "views": "3k",
+      "comments": "2k"
+    },
+    {
+      "id": "6",
+      "userName": "Adhiraj M",
+      "post": "Good Assets + Strong Management = Winning Business Ambuja Cement’s recent announcement to acquire the debt laden Sanghi Industries feels like the same above formula.",
+      "userAvatar": "/avatar6.jpg",
+      "label": "",
+      "timeElapsed": "6 min ago",
+      "likes": "4k",
+      "views": "6k",
+      "comments": "2k"
+    },
+    {
+      "id": "7",
+      "userName": "Visha BH",
+      "post": "Once in a while comes a conference call that makes you sit and take notice, and Laxmi Organic Industries Ltd (NSE Code: LXCHEM; Market Cap: 7,160cr) our client company’s conf call was one such call.",
+      "userAvatar": "/avatar7.jpg",
+      "label": "",
+      "timeElapsed": "7 min ago",
+      "likes": "1k",
+      "views": "4k",
+      "comments": "2k"
+    }
+  ]
+}
