@@ -35,7 +35,7 @@ export default function Sidebar({
       <div className="py-4 border-t-2 border-slate-500 ">
         <ul>
           <li
-            className={`flex items-center justify-between px-3 py-2.5 lg:px-6 lg:py-2.5 lg:hover:bg-[#2d486e] ${
+            className={`flex items-center justify-between px-3 py-2.5 lg:px-6 lg:py-2.5 lg:hover:bg-[#2d486e] cursor-pointer ${
               selectedTab === "Discussion" && "bg-[#142742]"
             }`}
             onClick={() => setSelectedTab("Discussion")}
@@ -47,7 +47,7 @@ export default function Sidebar({
             <BiCaretDown />
           </li>
           <li
-            className={`flex gap-2 px-3 py-2.5 lg:px-6 lg:py-2.5 lg:hover:bg-[#2d486e] items-center ${
+            className={`flex gap-2 px-3 py-2.5 lg:px-6 lg:py-2.5 lg:hover:bg-[#2d486e] items-center cursor-pointer ${
               selectedTab === "Market" && "bg-[#142742]"
             }`}
             onClick={() => setSelectedTab("Market")}
@@ -55,27 +55,27 @@ export default function Sidebar({
             <BiSolidDollarCircle className="w-[20px] h-[20px] lg:w-[30px] lg:h-[30px]" />
             <p>Market Stories</p>
           </li>
-          <li className="flex gap-2 px-3 py-2.5 lg:px-6 lg:py-2.5 hover:bg-[#2d486e]">
+          <li className="flex gap-2 px-3 py-2.5 lg:px-6 lg:py-2.5 hover:bg-[#2d486e] cursor-pointer">
             <span className="w-[20px] h-[20px] lg:w-[30px] lg:h-[30px]"></span>
             <p>Sentiment</p>
           </li>
-          <li className="flex gap-2 px-3 py-2.5 lg:px-6 lg:py-2.5 hover:bg-[#2d486e]">
+          <li className="flex gap-2 px-3 py-2.5 lg:px-6 lg:py-2.5 hover:bg-[#2d486e] cursor-pointer">
             <span className="w-[20px] h-[20px] lg:w-[30px] lg:h-[30px]"></span>
             <p>Market</p>
           </li>
-          <li className="flex gap-2 px-3 py-2.5 lg:px-6 lg:py-2.5 hover:bg-[#2d486e]">
+          <li className="flex gap-2 px-3 py-2.5 lg:px-6 lg:py-2.5 hover:bg-[#2d486e] cursor-pointer">
             <span className="w-[20px] h-[20px] lg:w-[30px] lg:h-[30px]"></span>
             <p>Sector</p>
           </li>
-          <li className="flex gap-2 px-3 py-2.5 lg:px-6 lg:py-2.5 hover:bg-[#2d486e]">
+          <li className="flex gap-2 px-3 py-2.5 lg:px-6 lg:py-2.5 hover:bg-[#2d486e] cursor-pointer">
             <span className="w-[20px] h-[20px] lg:w-[30px] lg:h-[30px]"></span>
             <p>Watchlist</p>
           </li>
-          <li className="flex gap-2 px-3 py-2.5 lg:px-6 lg:py-2.5 hover:bg-[#2d486e]">
+          <li className="flex gap-2 px-3 py-2.5 lg:px-6 lg:py-2.5 hover:bg-[#2d486e] cursor-pointer">
             <span className="w-[20px] h-[20px] lg:w-[30px] lg:h-[30px]"></span>
             <p>Events</p>
           </li>
-          <li className="flex gap-2 px-3 py-2.5 lg:px-6 lg:py-2.5 hover:bg-[#2d486e]">
+          <li className="flex gap-2 px-3 py-2.5 lg:px-6 lg:py-2.5 hover:bg-[#2d486e] cursor-pointer">
             <span className="w-[20px] h-[20px] lg:w-[30px] lg:h-[30px]"></span>
             <p>News/Interview</p>
           </li>
